@@ -1,0 +1,28 @@
+{
+  "name": "fly",
+  "title": "Fly",
+  "description": "The best jQuery plugin ever.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/amibug/fly",
+  "author": {
+    "name": "wuyuedong",
+    "url": "https://github.com/amibug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amibug/fly"
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ]
+}

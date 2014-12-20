@@ -1,5 +1,6 @@
 # Fly
-demo: [http://codepen.io/hzxs1990225/full/ogLaVp]
+demo: http://codepen.io/hzxs1990225/full/ogLaVp
+
 In your web page:
 
 ```html

@@ -1,14 +1,5 @@
 # Fly
 
-The best jQuery plugin ever.
-
-## Getting Started
-
-Download the [production version][min] or the [development version][max].
-
-[min]: https://raw.github.com/amibug/jquery-fly/master/dist/jquery.fly.min.js
-[max]: https://raw.github.com/amibug/jquery-fly/master/dist/jquery.fly.js
-
 In your web page:
 
 ```html
@@ -16,16 +7,28 @@ In your web page:
 <script src="dist/fly.min.js"></script>
 <script>
 jQuery(function($) {
-  $.awesome(); // "awesome"
+  $('#fly').fly({
+    start:{
+      left: 11,  //开始位置（必填）
+      top: 600,  //开始位置（必填）
+    },
+    end:{
+      left: 500, //结束位置（必填）
+      top: 130,  //结束位置（必填）
+      width: 100, //结束时高度
+      height: 100, //结束时高度
+    },
+    autoPlay: false, //是否直接运动,默认true
+    speed: 1.1, //越大越快，默认1.2
+    vertex_Rtop：100, //运动轨迹最高点top值，默认20
+    onEnd: function(){} //结束回调
+  });
+  $('#fly').play(); //autoPlay: false后，手动调用运动
+  $('#fly').destory(); //移除dom
 });
 </script>
 ```
-
-## Documentation
-_(Coming soon)_
-
 ## Examples
 _(Coming soon)_
 
-## Release History
-_(Nothing yet)_
+

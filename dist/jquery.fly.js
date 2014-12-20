@@ -87,7 +87,7 @@
         start = settings.start,
         count = settings.count,
         steps = settings.steps,
-        end = settings.end, left_off = 0, top_off = 0;
+        end = settings.end;
       // 计算left top值
       var left = start.left + (end.left - start.left) * count / steps,
         top = settings.curvature == 0 ? start.top + (end.top - start.top) * count / steps : settings.curvature * Math.pow(left - settings.vertex_left, 2) + settings.vertex_top;
@@ -97,12 +97,10 @@
           width = end.width - (end.width - start.width) * Math.cos(count < i ? 0 : (count - i) / (steps - i) * Math.PI / 2),
           height = end.height - (end.height - start.height) * Math.cos(count < i ? 0 : (count - i) / (steps - i) * Math.PI / 2);
         $element.css({width: width + "px", height: height + "px", "font-size": Math.min(width, height) + "px"});
-        left_off = width / 2;
-        top_off = height / 2;
       }
       $element.css({
-        left: left - left_off + "px",
-        top: top - top_off + "px"
+        left: left + "px",
+        top: top + "px"
       });
       settings.count++;
       // 定时任务
@@ -120,7 +118,7 @@
     self.destory = function(){
       $element.remove();
     };
-    
+
     self.init(options);
   };
 

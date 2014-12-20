@@ -1,15 +1,15 @@
 # Fly
-
+demo: [http://codepen.io/hzxs1990225/full/ogLaVp]
 In your web page:
 
 ```html
 <script src="jquery.js"></script>
-<script src="dist/fly.min.js"></script>
+<script src="dist/jquery.fly.min.js"></script>
 <script>
 jQuery(function($) {
   $('#fly').fly({
     start:{
-      left: 11,  //开始位置（必填）
+      left: 11,  //开始位置（必填）#fly元素会被设置成position: fixed
       top: 600,  //开始位置（必填）
     },
     end:{
@@ -28,7 +28,9 @@ jQuery(function($) {
 });
 </script>
 ```
-## Examples
-_(Coming soon)_
+IE10以下，引入src/requestAnimationFrame.js
+@support IE>=7
+
+
 
 

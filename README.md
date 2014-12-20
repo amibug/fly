@@ -30,6 +30,7 @@ jQuery(function($) {
 </script>
 ```
 IE10以下，引入src/requestAnimationFrame.js
+
 @support IE>=7
 
 

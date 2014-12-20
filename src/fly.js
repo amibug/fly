@@ -23,7 +23,7 @@
       $element = $(element);
 
     /**
-     * 初始化组建，new的时候即调用
+     * 初始化组件，new的时候即调用
      */
     self.init = function (options) {
       this.setOptions(options);
@@ -31,7 +31,7 @@
     };
 
     /**
-     * 设置组建参数
+     * 设置组件参数
      */
     self.setOptions = function (options) {
       this.settings = $.extend(true, {}, defaults, options);

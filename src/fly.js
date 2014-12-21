@@ -54,9 +54,11 @@
       }
 
       /**
+       * ======================================================
        * 运动轨迹在页面中的top值可以抽象成函数 y = a * x*x + b;
        * a = curvature
        * b = vertex_top
+       * ======================================================
        */
 
       var distance = Math.sqrt(Math.pow(start.top - end.top, 2) + Math.pow(start.left - end.left, 2)),

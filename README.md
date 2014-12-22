@@ -1,5 +1,6 @@
 # Fly
-demo: [http://codepen.io/hzxs1990225/full/ogLaVp]
+demo: http://codepen.io/hzxs1990225/full/ogLaVp
+
 In your web page:
 
 ```html
@@ -29,6 +30,7 @@ jQuery(function($) {
 </script>
 ```
 IE10以下，引入src/requestAnimationFrame.js
+
 @support IE>=7
 
 

@@ -23,7 +23,7 @@
       $element = $(element);
 
     /**
-     * 初始化组建，new的时候即调用
+     * 初始化组件，new的时候即调用
      */
     self.init = function (options) {
       this.setOptions(options);
@@ -31,7 +31,7 @@
     };
 
     /**
-     * 设置组建参数
+     * 设置组件参数
      */
     self.setOptions = function (options) {
       this.settings = $.extend(true, {}, defaults, options);
@@ -39,6 +39,7 @@
         start = settings.start,
         end = settings.end;
 
+      $element.css({marginTop: '0px', marginLeft: '0px', position: 'fixed'}).appendTo('body');
       // 运动过程中有改变大小
       if (end.width != null && end.height != null) {
         $.extend(true, start, {
@@ -80,7 +81,6 @@
      * 开始运动，可自己调用
      */
     self.play = function () {
-      $element.css({marginTop: '0px', marginLeft: '0px', position: 'fixed'}).appendTo('body');
       this.move();
     };
 

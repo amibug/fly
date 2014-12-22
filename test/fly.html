@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Fly Test Suite</title>
+  <style>
+    .test{background: red;width: 50px;height:50px;}
+  </style>
   <!-- Load local jQuery. -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
   <!-- Load local lib and tests. -->
@@ -10,7 +13,7 @@
 </head>
 <body>
   <script>
-    $('<div style="background: red;width: 50px;height:50px;"></div>').fly({
+    $('<div class="test"></div>').fly({
       start: {top: 542, left: 622},
       end: {top: 142, left: 322, width: 20, height: 20},
       onEnd: function(){

@@ -122,7 +122,7 @@
     /**
      * 销毁
      */
-    self.destory = function(){
+    self.destroy = function(){
       $element.remove();
     };
 

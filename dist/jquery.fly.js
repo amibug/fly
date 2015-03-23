@@ -1,6 +1,6 @@
-/*! fly - v1.0.0 - 2014-12-22
+/*! fly - v1.0.0 - 2015-03-23
 * https://github.com/amibug/fly
-* Copyright (c) 2014 wuyuedong; Licensed MIT */
+* Copyright (c) 2015 wuyuedong; Licensed MIT */
 (function ($) {
   $.fly = function (element, options) {
     // 默认值
@@ -50,9 +50,11 @@
       }
 
       /**
+       * ======================================================
        * 运动轨迹在页面中的top值可以抽象成函数 y = a * x*x + b;
        * a = curvature
        * b = vertex_top
+       * ======================================================
        */
 
       var distance = Math.sqrt(Math.pow(start.top - end.top, 2) + Math.pow(start.left - end.left, 2)),
@@ -115,7 +117,7 @@
     /**
      * 销毁
      */
-    self.destory = function(){
+    self.destroy = function(){
       $element.remove();
     };
 

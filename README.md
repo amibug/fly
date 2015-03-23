@@ -25,7 +25,7 @@ jQuery(function($) {
     onEnd: function(){} //结束回调
   });
   $('#fly').play(); //autoPlay: false后，手动调用运动
-  $('#fly').destory(); //移除dom
+  $('#fly').destroy(); //移除dom
 });
 </script>
 ```
